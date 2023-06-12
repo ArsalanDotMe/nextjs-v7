@@ -1,13 +1,16 @@
 {
-  "name": "nextjs-v7",
-  "version": "0.1.0",
-  "private": true,
   "scripts": {
+    "edgio:dev": "edgio dev",
+    "edgio:build": "edgio build",
+    "edgio:deploy": "edgio deploy",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
+  "name": "nextjs-v7",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "@next/font": "13.4.3",
     "@types/node": "20.2.3",
@@ -19,5 +22,13 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@edgio/cli": "^7.0.15",
+    "@edgio/core": "^7.0.15",
+    "@edgio/devtools": "^7.0.15",
+    "@edgio/next": "^7.0.15",
+    "@edgio/prefetch": "^7.0.15",
+    "@edgio/react": "^7.0.15"
   }
 }
