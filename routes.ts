@@ -6,3 +6,9 @@ import { nextRoutes } from '@edgio/next'
 export default new Router()
   // NextRoutes automatically adds routes for all Next.js pages and their assets
   .use(nextRoutes)
+  .match('/api/:path*', {
+    caching: {
+      bypass_cache: true,
+      bypass_client_cache: true
+    }
+  })
