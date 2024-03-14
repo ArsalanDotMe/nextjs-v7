@@ -10,5 +10,12 @@ export default new Router()
     caching: {
       bypass_cache: true,
       bypass_client_cache: true
-    }
+    },
+  })
+  .match('/api/echo', features => {
+    features.proxy('edgio_serverless', {
+      transformResponse: (response) => {
+        response.setHeader('x-some-header', 'this header was added by transformResponse')
+      }
+    })
   })
