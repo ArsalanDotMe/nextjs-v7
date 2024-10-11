@@ -25,11 +25,11 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@edgio/cli": "^7.12.13",
-    "@edgio/core": "^7.12.13",
-    "@edgio/devtools": "^7.12.13",
-    "@edgio/next": "^7.12.13",
-    "@edgio/prefetch": "^7.12.13",
-    "@edgio/react": "^7.12.13"
+    "@edgio/cli": "^7.13.6",
+    "@edgio/core": "^7.13.6",
+    "@edgio/devtools": "^7.13.6",
+    "@edgio/next": "^7.13.6",
+    "@edgio/prefetch": "^7.13.6",
+    "@edgio/react": "^7.13.6"
   }
 }

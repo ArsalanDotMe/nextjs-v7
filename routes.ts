@@ -12,13 +12,13 @@ export default new Router()
       bypass_client_cache: true
     },
   })
-  .match('/api/echo', features => {
-    features.proxy('edgio_serverless', {
-      transformRequest: (request) => {
-        request.url = request.rawUrl
-      },
-      transformResponse: (response) => {
-        response.setHeader('x-some-header', 'this header was added by transformResponse')
-      }
-    })
-  })
+  // .match('/api/echo', features => {
+  //   features.proxy('edgio_serverless', {
+  //     transformRequest: (request) => {
+  //       request.url = request.rawUrl
+  //     },
+  //     transformResponse: (response) => {
+  //       response.setHeader('x-some-header', 'this header was added by transformResponse')
+  //     }
+  //   })
+  // })

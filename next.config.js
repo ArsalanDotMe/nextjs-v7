@@ -5,6 +5,7 @@ const { withEdgio } = require('@edgio/next/config')
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  compress: false,
 }
 
 const _preEdgioExport = nextConfig;;
